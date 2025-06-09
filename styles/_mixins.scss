@@ -1,7 +1,5 @@
-@mixin fluid-text($max: 48, $min: 16) {
-  font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
-}
-//1440px - максимальная ширина по макету
+
+//1920px - максимальная ширина по макету
 
 @mixin reset-link {
   color: inherit;
@@ -17,6 +15,7 @@
   background-color: transparent;
   border: none;
 }
+
 
 @mixin flex-center($isInline: false) {
   @if $isInline {
@@ -53,6 +52,32 @@
   overflow: hidden !important;
 }
 
-// h1 {
-//     @include fluid-text(48, 16);
-// }
+@mixin backgroundImgSet($urlWithoutFormat) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: image-set(
+    url("#{$urlWithoutFormat}480-2x.avif") type("image/avif") 2x,
+    url("#{$urlWithoutFormat}480-1x.avif") type("image/avif") 1x,
+    url("#{$urlWithoutFormat}480-2x.jpg") 2x,
+    url("#{$urlWithoutFormat}480-1x.jpg") 1x
+  );
+
+  @include phone-above {
+    background-image: image-set(
+    url("#{$urlWithoutFormat}1000-2x.avif") type("image/avif") 2x,
+    url("#{$urlWithoutFormat}1000-1x.avif") type("image/avif") 1x,
+    url("#{$urlWithoutFormat}1000-2x.jpg") 2x,
+    url("#{$urlWithoutFormat}1000-1x.jpg") 1x
+  );
+  }
+
+  @include tablet-above {
+    background-image: image-set(
+    url("#{$urlWithoutFormat}1920-2x.avif") type("image/avif") 2x,
+    url("#{$urlWithoutFormat}1920-1x.avif") type("image/avif") 1x,
+    url("#{$urlWithoutFormat}1920-2x.jpg") 2x,
+    url("#{$urlWithoutFormat}1920-1x.jpg") 1x
+  );
+  }
+}

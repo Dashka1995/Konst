@@ -1,0 +1,10 @@
+.room {
+
+  &__title {
+    font-size: clamp(35px, 11px + 6.72vw, 78px);
+
+    @include tablet-above {
+        font-size: 96px;
+    }
+  }
+}
