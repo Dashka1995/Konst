@@ -1,0 +1,33 @@
+.swiper {
+  width: 100%;
+  background-color: aqua;
+
+  img {
+    width: 100%;
+  }
+
+  &-button-next,
+  &-button-prev {
+    display: none;
+    background-color: var(--color-accent-trans40);
+    color: var(--color-white);
+    height: 83px;
+    width: 83px;
+    border-radius: calc(83px / 2);
+
+    @include tablet-above {
+      display: flex;
+    }
+  }
+
+  &-pagination-fraction {
+    color: var(--color-white);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    @include phone-above {
+        font-size: clamp(32px, -7968px + 800vw, 40px);
+    }
+  }
+}
