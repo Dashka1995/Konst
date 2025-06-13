@@ -20,14 +20,16 @@
   }
 
   &__body {
+    width: 95%;
     color: var(--color-white);
     height: clamp(104px, 75px + 7.97vw, 155px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     @include tablet-above {
-      height: 245px;
+      max-width: 830px;
+      height: 173px;
     }
   }
 
@@ -39,7 +41,7 @@
       width: clamp(87px, 48px + 10.83vw, 100px);
 
       @include phone-above {
-        width: clamp(133px, -69867px + 7000vw, 203px);
+        width: 129px;
       }
 
       svg {
@@ -53,9 +55,9 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    font-family: "Outfit", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
 
     &-list {
       width: 100%;

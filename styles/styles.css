@@ -200,13 +200,6 @@ svg * {
   }
 }
 @font-face {
-  font-family: "Outfit";
-  src: url("../fonts/Outfit-Medium.woff2") format("woff2"), url("../fonts/Outfit-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Oswald";
   src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
   font-weight: 700;
@@ -447,7 +440,7 @@ a {
   align-items: center;
   height: 48px;
   padding: 10px;
-  font-family: "Outfit", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   font-size: 24px;
 }
@@ -569,15 +562,17 @@ body:has(dialog[open]) {
   position: sticky;
 }
 .header__body {
+  width: 95%;
   color: var(--color-white);
   height: clamp(104px, 75px + 7.97vw, 155px);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 1001px) {
   .header__body {
-    height: 245px;
+    max-width: 830px;
+    height: 173px;
   }
 }
 .header__logo {
@@ -591,7 +586,7 @@ body:has(dialog[open]) {
 }
 @media (min-width: 481px) {
   .header__logo-wrapper {
-    width: clamp(133px, -69867px + 7000vw, 203px);
+    width: 129px;
   }
 }
 .header__logo-wrapper svg {
@@ -602,9 +597,9 @@ body:has(dialog[open]) {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  font-family: "Outfit", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
 }
 .header__menu-list {
   width: 100%;
