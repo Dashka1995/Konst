@@ -7,17 +7,10 @@
 
   --background-gradient: linear-gradient(45deg, #fef98b 3.68%, #e4b01a 98.66%);
 
-  // --border: 1px solid var(--color-dark);
-  // --border-radius: 14px;
-  // --border-radius-small: 7px;
-  // --border-radius-large: 45px;
-
   --font-family-base: "Montserrat Alternates", sans-serif;
 
   --container-width: 1216px;
-  --container-padding-x: 30px; // значение врап-паддингов для контейнеров в мобиле
-  // --section-padding-y: calc(140px / 2);// устанавливаем отступы между секциями с помощью паддингов, потому что марджины будут схлопываться
-  // --input-height: 60px; //форм на этом лендинге быть не должно
+  --container-padding-x: 30px;
   --button-height: 53px;
 
   --transition-duration: 0.8s;

@@ -2,6 +2,7 @@
   --container-padding-x: 20px;
 
   background-color: var(--color-accent);
+  box-shadow: 0px 2px 3px 0px #04473066;
   position: sticky;
   width: 100%;
   z-index: 100;
@@ -119,7 +120,7 @@
       width: 100%;
       height: auto;
     }
-    
+
     @include phone-above {
       @include square(56px);
     }
